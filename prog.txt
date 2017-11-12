@@ -13,15 +13,15 @@ public class ProgInC{
 	while(t > 0){
 	     c = 0;
 	     v = 0;
-	     a = STDIN_SCANNER.nextLong();
-	     b = STDIN_SCANNER.nextLong();
+	     a = STDIN_SCANNER.nextLong(); //Take input a//
+	     b = STDIN_SCANNER.nextLong(); //Take input b//
 	     while(a > 0 && b > 0){
-		  r = a % 10;
-		  s = b % 10;
-		  c = (long)(c + (a % 10) * Math.pow(10, v));
-		  a = a / 10;
-		  b = b / 10;
-		  v = v + 1;
+		  r = a % 10; //obtain remainder of a//
+		  s = b % 10; //obtain remainder of b//
+		  c = (long)(c + ((a+b) % 10) * Math.pow(10, v)); //increment the new variable c//
+		  a = a / 10; //obtain a's quotient//
+		  b = b / 10; //obtain b's quotient//
+		  v = v + 1; // increment the exponent value//
  	      }
 	      while(a > 0){
 		   c = (long)(c + (a % 10) * Math.pow(10, v));
@@ -36,9 +36,9 @@ public class ProgInC{
 	      t = t - 1;
 	      d[p++] = c;
 	  }
-	  for(int i = 0; i < p; i++){
+	  for(int i = 0; i < p; i++){  // print i untill i is equal to p//
 	      System.out.println(d[i]);
       	  }
       }
-      public final static Scanner STDNIS_SCANNER = new Scanner(System.in);
+      public final static Scanner STDNIS_SCANNER = new Scanner(System.in); //Reading values from the keyboard//
 }
