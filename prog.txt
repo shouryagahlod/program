@@ -36,7 +36,7 @@ public class ProgInC{
 	      t = t - 1;
 	      d[p++] = c;
 	  }
-	  for(int i = 0; i < p; i++){  // print i untill i is equal to p//
+	  for(int i = 0; i < p; i++){  // print i until i is equal to p//
 	      System.out.println(d[i]);
       	  }
       }
